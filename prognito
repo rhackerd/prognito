@@ -1,0 +1,9 @@
+#!/bin/bash
+if command -v python3 &>/dev/null; then
+    echo "Running python script"
+else
+    echo "Please install python3"
+    exit
+fi
+
+python main.py $@
